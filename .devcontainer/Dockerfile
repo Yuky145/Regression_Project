@@ -16,9 +16,9 @@ WORKDIR /app
 
 RUN uv venv running
 
-COPY requierments.txt .
+COPY requirments.txt .
 
-RUN uv pip install --python running/bin/python -r requierments.txt
+RUN uv pip install --python running/bin/python -r requirments.txt
 
 ENV VIRTUAL_ENV=/app/running
 ENV PATH="/app/.venv/bin:$PATH"
